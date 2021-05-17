@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         else if(view.getId() == R.id.registration){
             registration(ETEmailAddress.getText().toString(), ETPassword.getText().toString());
         }
+
     }
 
     public void signing(String email, String password){
