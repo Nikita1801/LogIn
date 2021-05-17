@@ -3,6 +3,7 @@ package com.example.login;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
             public void onComplete(@NonNull @org.jetbrains.annotations.NotNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(getApplicationContext(), "Авторизация успешна", Toast.LENGTH_LONG).show();
+
                 }else{
                     Toast.makeText(getApplicationContext(), "Авторизация провалена", Toast.LENGTH_LONG).show();
                 }
